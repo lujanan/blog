@@ -189,7 +189,7 @@ For more examples and ideas, visit:
 
 > 国内网络访问docker官方镜像可能会比较慢
 >
-> https://registry.docker-cn.com 为Docker官方提供的国内加速器，应该算是体验最后之一的加速器了
+> https://registry.docker-cn.com 为Docker官方提供的国内加速器，应该算是体验最好之一的加速器了
 >
 > https://reg-mirror.qiniu.com 七牛云加速器
 
