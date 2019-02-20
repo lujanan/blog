@@ -32,6 +32,14 @@ SET PASSWORD = PASSWORD('newpassword');
 
 
 
+#### 删除用户
+
+```mysql
+DROP USER 'username'@'host';
+```
+
+
+
 #### 授权
 
 ```mysql
@@ -42,7 +50,7 @@ GRANT privileges ON `databasename`.`tablename` TO 'username'@'host';
 # GRANT UPDATE ON `test`.* TO 'admin'@'%';
 ```
 
-> + privileges 用户的操作权限（如SELECT，UPDATE，INSERT等，见附录，给予所以权限使用ALL）
+> + privileges 用户的操作权限（如SELECT，UPDATE，INSERT等，见[附录](#附录)，给予所以权限使用ALL）
 > + databasename 数据库名
 > + tablename 数据表名
 
@@ -54,10 +62,26 @@ GRANT privileges ON `databasename`.`tablename` TO 'username'@'host' WITH GRANT O
 
 
 
-#### 撤销用户权限
+#### 查看权限
+
+```mysql
+SHOW GRANTS FOR ‘pig’@'%’; 
+```
+
+
+
+#### 撤销权限
 
 ```mysql
 REVOKE privilege ON `databasename`.`tablename` FROM 'username'@'host';
 ```
 
 > 说明参考授权部分
+>
+> 该部分功能需要验证下
+
+
+
+
+
+### 附录
